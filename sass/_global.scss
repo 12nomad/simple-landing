@@ -1,0 +1,89 @@
+@import "var";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+  // box-shadow is preferred bcz it can wrap the border of the element
+  box-shadow: 0 0 0 2px $color-primary;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+}
+html {
+  // to scale with the font size defined by the user browser
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.5;
+  background-color: $color-light;
+  color: $color-dark;
+}
+ul {
+  list-style: none;
+}
+a:link,
+a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-dark;
+  font-size: 1.515rem;
+  font-weight: 500;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+h1 {
+  font-size: 5.653rem;
+  line-height: 1.05;
+}
+h2 {
+  font-size: 3.998rem;
+  line-height: 1.1;
+}
+h3 {
+  font-size: 2.827rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.999rem;
+}
+p,
+li,
+span,
+strong,
+figcaption,
+input {
+  font-size: 1.515rem;
+}
+strong {
+  font-weight: 600;
+}
+
+// FIXME: rem and em do not depend on html font size when you define the media query width,
+//         but it'll be the same when writing the styles inside
+//         instead 1rem == 1em == 16 px in media queries width
+
+// 1219 TabletLandscape
+@media screen and (max-width: 76.188em) {
+  html {
+    // 9px for TabletLandscape and less instead of 10
+    font-size: 56.25%;
+  }
+}
+
+// 959 tablet
+@media screen and (max-width: 76.188em) {
+  html {
+    // 8px for Tablet and less instead of 10
+    font-size: 50%;
+  }
+}

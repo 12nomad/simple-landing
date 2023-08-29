@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+    rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="sass/index.css">
+
+  <title>LiteeSnack!</title>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="navbar-container">
+        <a href="#" title="litee snack logo">
+          <img src="./assets/logo-primary.png" alt="logo of the website">
+        </a>
+        <nav class="navbar-navigation">
+          <ul>
+            <li>
+              <ion-icon name="close-circle-outline" class="nav-icon nav-close"></ion-icon>
+            </li>
+            <li><a class="nav-link" href="#how" title="">How It Works</a></li>
+            <li><a class="nav-link" href="#meals" title="">Meals</a></li>
+            <li><a class="nav-link" href="#testimonials" title="">Testimonials</a></li>
+            <li><a class="nav-link" href="#pricing" title="">Pricing</a></li>
+            <li><a href="#free" title="subscription" class="btn-cta nav-link"><span>Get Free Meal </span>
+                <ion-icon name="calendar-outline"></ion-icon>
+              </a></li>
+          </ul>
+        </nav>
+        <!-- for mobile devices -->
+        <div class="navbar-mobile-navigation">
+          <ion-icon name="menu-outline" class="nav-icon nav-open"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-hero">
+      <div class="container section-hero-container">
+        <div class="section-hero-left ">
+          <h1>
+            A tasty meal delivered to your door whenever you want.
+          </h1>
+          <h3>
+            We provide a monthly food subscription that will make you eat healthy again at your heart content.
+          </h3>
+          <div class="section-hero-left-buttons">
+            <a href="#" title="subscription" class="btn btn-primary"><span>Start
+                Eating
+                Well</span>
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </a>
+            <a href="#" title="learn more" class="btn"><span>Learn More</span>
+              <ion-icon name="arrow-down-circle-outline"></ion-icon>
+            </a>
+          </div>
+          <div class="section-hero-left-delivery">
+            <div class="faces">
+              <img src="./assets/customers/customer-1.jpg" alt="picture of customer 1">
+              <img src="./assets/customers/customer-2.jpg" alt="picture of customer 2">
+              <img src="./assets/customers/customer-3.jpg" alt="picture of customer 3">
+              <img src="./assets/customers/customer-4.jpg" alt="picture of customer 4">
+              <img src="./assets/customers/customer-5.jpg" alt="picture of customer 5">
+              <img src="./assets/customers/customer-6.jpg" alt="picture of customer 6">
+            </div>
+            <p><span class="text-primary">250,000+</span> meals delivered until now!</p>
+          </div>
+        </div>
+        <div class="section-hero-right">
+          <img src="./assets/hero-img.png" class="hero-img" alt="pictures of tasty meals by LiteeSnack!">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-featured">
+      <div class="section-featured-container container">
+        <span class="upp-title text-center">As Featured In</span>
+        <div class="featured-logo">
+          <!-- <img src="./assets/logos/business-insider.png" alt="business-insider logo"> -->
+          <img src="./assets/logos/usa-today.png" alt="usa today logo">
+          <img src="./assets/logos/the-new-york-times.png" alt="new york times logo">
+          <img src="./assets/logos/techcrunch.png" alt="tech crunch logo">
+          <!-- <img src="./assets/logos/forbes.png" alt="forbes logo"> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section-how">
+      <div class="section-how-container container">
+        <span class="upp-title">How It Works?</span>
+        <h2 class="section-heading">Get what you desire in 3 simple steps.</h2>
+        <div class="section-how-content section-how-content-01">
+          <div class="content-left">
+            <span class="step-number">01</span>
+            <h3 class="section-subheading">Tell us what you like (and what not)</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quisquam esse suscipit nesciunt
+              voluptatum maiores voluptate corrupti eveniet ullam illum pariatur quae, rerum enim quam.
+            </p>
+          </div>
+          <div class="content-right">
+            <img src="./assets/app/app-1.png" alt="app where user can choose what are their preferences">
+            <!-- <div class="circle"></div> -->
+          </div>
+        </div>
+        <div class="section-how-content section-how-content-02">
+          <div class="content-left">
+            <img src="./assets/app/app-2.png" alt="app where user can choose where to deliver your meal">
+            <!-- <div class="circle"></div> -->
+          </div>
+          <div class="content-right">
+            <span class="step-number">02</span>
+            <h3 class="section-subheading">Approve your weekly meal plan</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quisquam esse suscipit nesciunt
+              voluptatum maiores
+              voluptate corrupti eveniet ullam illum pariatur quae, rerum enim quam.
+            </p>
+          </div>
+        </div>
+        <div class="section-how-content section-how-content-03">
+          <div class="content-left">
+            <span class="step-number">03</span>
+            <h3 class="section-subheading">Receive meals at convenient time</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quisquam esse suscipit nesciunt
+              voluptatum maiores
+              voluptate corrupti eveniet ullam illum pariatur quae, rerum enim quam.
+            </p>
+          </div>
+          <div class="content-right">
+            <img src="./assets/app/app-3.png" alt="app where user can see the summary of the order">
+            <!-- <div class="circle"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="meals" class="section-meals">
+      <div class="section-meals-container container">
+        <span class="upp-title">Meals</span>
+        <h2 class="section-heading">Some of our clients favorite meal.</h2>
+
+        <div class="section-meals-content">
+
+          <div class="meal">
+            <img src="./assets/meals/meal-2.jpg" alt="Avocado Slaw">
+            <div class="meal-info">
+              <div>
+                <div class="tags">
+                  <span class="tag tag-best-seller">Best-Seller</span>
+                  <span class="tag tag-primary">Vegetarian</span>
+                  <!-- <span class="tag">Salad</span> -->
+                </div>
+                <h4>Avocado Slaw</h4>
+              </div>
+              <ul>
+                <li><span class="text-medium">
+                    <ion-icon name="restaurant-outline"></ion-icon>
+                  </span> avocado, peanuts, ...</li>
+                <li><span><span class="text-medium"></span>
+                    <ion-icon name="flame-outline"></ion-icon> <span class="text-secondary">400 Calories</span>
+                  </span>
+
+                </li>
+                <li><span><span class="text-medium">
+                      <ion-icon name="heart-outline"> </ion-icon>
+                    </span> <span class="text-secondary">4.9 Likes (448)</span></span>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img src="./assets/meals/meal-1.jpg" alt="japanese gyozas">
+            <div class="meal-info">
+              <div>
+                <div class="tags">
+                  <span class="tag tag-best-seller">Best-Seller</span>
+                  <span class="tag">Dumplings</span>
+                  <!-- <span class="tag">Appetizer</span> -->
+                </div>
+
+                <h4>Japanese Gyozas</h2>
+
+              </div>
+              <ul>
+                <li><span class="text-medium">
+                    <ion-icon name="restaurant-outline"></ion-icon>
+                  </span> pork, chives, ...</li>
+                <li><span><span class="text-medium"></span>
+                    <ion-icon name="flame-outline"></ion-icon><span class="text-secondary"> 650 Calories</span>
+                  </span>
+                </li>
+                <li><span><span class="text-medium">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </span> <span class="text-secondary">4.9 Likes (537)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal meal-3">
+            <img src="./assets/meals/meal-3.jpg" alt="Classic Cheese Pizza">
+            <div class="meal-info">
+              <div>
+                <div class="tags">
+                  <span class="tag tag-best-seller">Best-Seller</span>
+                  <span class="tag">Pizza</span>
+                </div>
+                <h4>Cheese Pizza</h4>
+              </div>
+              <ul>
+                <li><span class="text-medium">
+                    <ion-icon name="restaurant-outline"></ion-icon>
+                  </span> mozzarella, pepperoni, ...</li>
+                <li><span><span class="text-medium"></span>
+                    <ion-icon name="flame-outline"></ion-icon><span class="text-secondary"> 618 Calories<span></span>
+
+                </li>
+                <li><span><span class="text-medium">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </span> <span class="text-secondary">4.8 Likes (481)</span></span>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="check-all-meals">
+          <span><a href="#">Check All Meals</a>
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            <div class="line-sm"></div>
+          </span>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section-testimonials">
+      <div class="section-testimonials-container container">
+        <span class="upp-title">They Trust Us!</span>
+        <h2 class="section-heading">Testimonials.</h2>
+
+        <div class="section-testimonials-content">
+          <div class="content-left">
+            <figure class="testimonial">
+
+              <p class="upp-title">FROM A CUSTOMER</p>
+              <figcaption>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rem optio debitis sequi reiciendis odio
+                laborum quos, laboriosam et consectetur impedit obcaecati, dolor, fugiat possimus iste corrupti
+                aliquam! Molestias, <span><span class="text-background">in voluptatum iste sapiente
+                    perferendis</span></span> ab
+                quisquam excepturi tempore? corrupti
+                eveniet ullam illum pariatur quae voluptatum iste sapiente perferendis. Amet consectetur adipisicing
+                elit.
+              </figcaption>
+              <div class="customer">
+                <img src="./assets/customers/customer-1.jpg" alt="Elinalise Dragonroad">
+                <div>
+                  <strong>Elinalise Dragonroad</strong>
+                  <p>Software Engineer</p>
+                </div>
+              </div>
+              <!-- <div class="pattern"></div> -->
+
+            </figure>
+          </div>
+          <div class="content-right">
+            <figure class="figure-1"><img src="./assets/gallery/meal-top.jpg" alt="meal by Litee Snack!"></figure>
+            <figure class="figure-2"><img src="./assets/gallery/meal-bottom.jpg" alt="meal by Litee Snack!"></figure>
+            <figure class="figure-3"><img src="./assets/gallery/meal-right.jpg" alt="meal by Litee Snack!"></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section-pricing">
+      <div class="section-pricing-container container">
+        <span class="upp-title text-center">Subscription Plan</span>
+        <h2 class="section-heading text-center">Eat well without breaking the bank.</h2>
+
+        <div class="section-pricing-content">
+          <div class="price content-left">
+            <header class="text-center">
+              <h4 class="text-primary">Basic</h4>
+              <h3>$399<span>/month</span> </h3>
+            </header>
+            <ul>
+              <li>
+                <ion-icon name="restaurant-outline"></ion-icon>
+                <span>1 meal per day</span>
+              </li>
+              <li>
+                <ion-icon name="time-outline"></ion-icon>
+                <span>Order from 10am to 4pm</span>
+              </li>
+              <li>
+                <ion-icon name="bicycle-outline"></ion-icon>
+                <span>Free delivery</span>
+              </li>
+            </ul>
+            <a href="#" title="learn more" class="btn"><span>Start
+                Eating
+                Well</span>
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </a>
+          </div>
+
+          <div class="price content-right">
+            <header class="text-center">
+              <h4 class="text-primary">Premium <ion-icon name="star"></ion-icon>
+              </h4>
+              <h3>$649<span>/month</span> </h3>
+            </header>
+            <ul>
+              <li>
+                <ion-icon name="restaurant-outline"></ion-icon>
+                <span>Up to 4 meals per day</span>
+              </li>
+              <li>
+                <ion-icon name="time-outline"></ion-icon>
+                <span>Order 24/7</span>
+              </li>
+              <li>
+                <ion-icon name="bicycle-outline"></ion-icon>
+                <span>Free delivery</span>
+              </li>
+              <li>
+                <ion-icon name="list-outline"></ion-icon>
+                <span>Access to latest recipes</span>
+              </li>
+              <li>
+                <ion-icon name="pint-outline"></ion-icon>
+                <span>Drinks on the house for each meal</span>
+              </li>
+            </ul>
+            <a href="#" title="subscription" class="btn btn-primary"><span>Start
+                Eating
+                Well</span>
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <p class="text-center p-md">
+          You can cancel or pause anytime. And the first meal is on us!
+        </p>
+      </div>
+    </section>
+
+    <section id="free" class="section-cta">
+      <div class="section-cta-container container">
+        <div class="section-cta-content">
+          <div class="content-left">
+            <h2>Get your free meal.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, totam voluptatibus odio, ad, vel eaque
+              aliquam repellat blanditiis numquam enim assumenda. Temporibus corrupti id qui deserunt officia adipisci
+              ea exercitationem modi sed.</p>
+
+            <form>
+              <div>
+                <label for="fullname">Full Name: </label>
+                <input type="text" name="fullname" id="fullname" required placeholder="Jane Doe">
+              </div>
+              <div>
+                <label for="email">E-Mail: </label>
+                <input type="email" name="email" id="email" placeholder="JaneDoe@example.com" required>
+              </div>
+              <div>
+                <label for="options">Where did you here from us? </label>
+                <select name="options" id="options" required>
+                  <!-- FIXME: if select is required the one with empty value is not allowed -->
+                  <option value="">Choose one option</option>
+                  <option value="relatives">Relatives</option>
+                  <option value="youtube">Youtube</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-secondary">Get Free Meal <ion-icon name="restaurant-outline">
+                </ion-icon></button>
+            </form>
+          </div>
+          <div class="content-right" role="img" aria-label="girl enjoying meal"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <a href="#" rel="noopener noreferrer" title="litee snack top page"><img src="./assets/logo-primary.png"
+            alt="Litee Snack Logo"></a>
+        <p>Portfolio project designed and developed by Jo Harijaonina.</p>
+      </div>
+      <!-- <h4>Visit My Website: ...</> -->
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./script/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+@import "var";
+
+.section-testimonials {
+  padding-top: 2.8rem;
+  padding-bottom: 10rem 0;
+  margin-bottom: 10rem;
+
+  &-content {
+    margin: 6.4rem 0;
+    @include content-grid(2, 1fr, 8rem, center, center);
+
+    .content-left {
+      .testimonial {
+        overflow: hidden;
+
+        figcaption {
+          font-size: 1.999rem;
+          margin-bottom: 2.4rem;
+
+          span {
+            transform: skewX(-12deg);
+            background-color: #abdbd1;
+            margin-left: 0.4rem;
+            padding: 0.2rem 0.4rem;
+            display: inline-block;
+          }
+          .text-background {
+            font-size: 1.999rem;
+            transform: skewX(12deg);
+          }
+        }
+        .customer {
+          display: flex;
+          align-items: center;
+          gap: 1.6rem;
+          margin-bottom: 1.6rem;
+
+          img {
+            width: 6.4rem;
+            height: 6.4rem;
+            border-radius: 50%;
+            border: 2px solid $color-primary;
+          }
+          div {
+            font-size: 1.727rem;
+            strong {
+              // opacity: 0.5;
+              color: $color-primary;
+              margin-bottom: 0.2rem;
+            }
+            p {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+
+    .content-right {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: 222px;
+      grid-template-areas:
+        "fig1 fig1 fig3"
+        "fig2 fig2 fig3";
+      gap: 2.4rem;
+      // align-items: center;
+
+      figure {
+        overflow: hidden;
+        border-radius: 0.5rem;
+        cursor: pointer;
+
+        &:hover img {
+          transform: scale(1.1);
+        }
+        img {
+          height: 100%;
+          transform: scale(1);
+          transition: all 0.2s ease-in-out;
+        }
+      }
+      .figure-1 {
+        grid-area: fig1;
+      }
+      .figure-2 {
+        grid-area: fig2;
+      }
+      .figure-3 {
+        grid-area: fig3;
+      }
+    }
+  }
+}
+
+// 959px Tablet
+@media screen and (max-width: 59.938em) {
+  .section-testimonials {
+    &-content {
+      @include content-grid(1, 1fr, 0, center, center);
+
+      .content-right {
+        margin-top: 3.2rem;
+      }
+    }
+  }
+}
+
+//  549Phones(34.313em),
+@media screen and (max-width: 34.313em) {
+  .section-testimonials {
+    &-content {
+      @include content-grid(1, 1fr, 0, center, center);
+
+      .content-right {
+        grid-auto-rows: 166px;
+      }
+    }
+  }
+}

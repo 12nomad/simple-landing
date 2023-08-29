@@ -1,0 +1,91 @@
+@import "var";
+
+.section-how {
+  padding-top: 2.8rem;
+  padding-bottom: 10rem 0;
+  margin-bottom: 10rem;
+
+  &-content {
+    @include content-grid(2, 1fr, 0.8rem, center, center);
+    margin: 6.4rem 0;
+
+    p {
+      font-size: 1.727rem;
+    }
+
+    // .circle {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   // FIXME: little trick
+    //   // width: 38rem;
+    //   // height: 38rem;
+    //   padding: 25%;
+    //   background-color: #abdbd1;
+    //   border-radius: 50%;
+    //   z-index: -2;
+    // }
+
+    // &-01 {
+    //   .content-right {
+    //     position: relative;
+    //     img {
+    //       width: 35%;
+    //       margin: auto;
+    //     }
+    //   }
+    // }
+    // &-02 {
+    //   .content-left {
+    //     position: relative;
+
+    //     img {
+    //       width: 35%;
+    //       margin: auto;
+    //     }
+    //   }
+    // }
+    // &-03 {
+    //   .content-right {
+    //     position: relative;
+
+    //     img {
+    //       width: 35%;
+    //       margin: auto;
+    //     }
+    //   }
+    // }
+  }
+}
+
+// 959px Tablet
+@media screen and (max-width: 59.938em) {
+  .section-how {
+    padding-bottom: 12.8rem 0;
+    margin-bottom: 12.8rem;
+
+    &-content {
+      @include content-grid(2, 1fr, 2.4rem, center, center);
+    }
+  }
+}
+
+//  549Phones(34.313em),
+@media screen and (max-width: 34.313em) {
+  .section-how {
+    &-content {
+      @include content-grid(1, 1fr, 0.8rem, center, center);
+
+      &-02 {
+        .content-left {
+          order: 1;
+        }
+      }
+      img {
+        width: 75%;
+        margin: 2.4rem auto 0 auto;
+      }
+    }
+  }
+}

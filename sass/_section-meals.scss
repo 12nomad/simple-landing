@@ -1,0 +1,157 @@
+@import "var";
+
+.section-meals {
+  padding-top: 2.8rem;
+  padding-bottom: 10rem 0;
+  margin-bottom: 10rem;
+
+  &-content {
+    padding: 0 8rem;
+    @include content-grid(3, 1fr, 3.2rem, center, center);
+    margin-top: 6.4rem;
+
+    .meal {
+      background-color: #fff;
+      border-radius: 0.5rem;
+      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      transform: translateY(0);
+
+      &:hover {
+        transform: translateY(-0.4rem);
+      }
+      img {
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+        aspect-ratio: 16/9;
+      }
+      .meal-info {
+        padding: 2.4rem 3.6rem;
+
+        .tags {
+          display: flex;
+          gap: 0.4rem;
+          margin-bottom: 0.8rem;
+        }
+        h4 {
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      li,
+      span {
+        font-size: 1.727rem;
+      }
+      .text-secondary {
+        font-weight: 400;
+        color: $color-dark;
+      }
+      ion-icon {
+        color: $color-secondary;
+      }
+    }
+    ion-icon {
+      vertical-align: middle;
+      margin-bottom: 0.4rem;
+      color: $color-secondary;
+      margin-right: 0.8rem;
+    }
+  }
+  .check-all-meals {
+    margin: 4.8rem 0 6.4rem 0;
+    position: relative;
+    text-align: center;
+
+    span {
+      cursor: pointer;
+      color: $color-secondary;
+
+      a:link,
+      a:visited {
+        color: $color-secondary;
+        transition: all 0.2s;
+        font-size: 1.999rem;
+      }
+
+      // &:hover,
+      // &:active {
+      //   color: #dc525f;
+      // }
+      // &:hover a:hover,
+      // &:hover a:active {
+      //   color: #dc525f;
+      // }
+    }
+    ion-icon {
+      vertical-align: middle;
+      margin-bottom: 0.4rem;
+      color: $color-secondary;
+      margin-right: 0.8rem;
+    }
+  }
+  .line-sm {
+    width: 3.2rem;
+    height: 0.4rem;
+    background-color: $color-secondary;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: 50%;
+    bottom: -0.2rem;
+    transform: translateX(-50%);
+  }
+}
+
+// 1365px
+@media screen and (max-width: 85.313em) {
+  .section-meals {
+    &-content {
+      padding: 0 4rem;
+    }
+  }
+}
+
+// 1220 TabletLandscape
+@media screen and (max-width: 76.25em) {
+  .section-meals {
+    &-content {
+      padding: 0;
+    }
+  }
+}
+
+// 959px Tablet
+@media screen and (max-width: 59.938em) {
+  .section-meals {
+    &-content {
+      @include content-grid(2, 1fr, 3.2rem, center, center);
+
+      .meal-3 {
+        // display: none;
+        grid-column: 1/-1;
+        max-width: 50%;
+        align-self: center;
+        justify-self: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+//  549Phones(34.313em),
+@media screen and (max-width: 34.313em) {
+  .section-meals {
+    &-content {
+      @include content-grid(1, 1fr, 3.2rem, center, center);
+
+      .meal-3 {
+        max-width: 100%;
+      }
+    }
+  }
+}

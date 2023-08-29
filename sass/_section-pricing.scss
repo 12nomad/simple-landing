@@ -1,0 +1,91 @@
+@import "var";
+
+.section-pricing {
+  padding-top: 2.8rem;
+  padding-bottom: 10rem;
+  margin-bottom: 3.2rem;
+
+  .p-md {
+    font-size: 1.727rem;
+    color: $color-gray;
+    font-weight: 500;
+  }
+  &-content {
+    margin: 6.4rem 0 4.8rem 0;
+    @include content-grid(2, 1fr, 6.4rem, center, flex-end);
+    align-content: center;
+
+    .price {
+      background-color: #fff;
+      padding: 2.4rem 4.8rem;
+      border-radius: 0.5rem;
+
+      header {
+        margin-bottom: 2.4rem;
+
+        h4 {
+          text-transform: uppercase;
+          margin-top: 0.4rem;
+
+          ion-icon {
+            vertical-align: middle;
+            margin-bottom: 0.4rem;
+            padding: 0.5rem;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: $color-primary;
+            color: $color-light;
+          }
+        }
+        span {
+          font-size: 1.999rem;
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        li,
+        span {
+          font-size: 1.727rem;
+
+          ion-icon {
+            color: $color-primary;
+            margin-right: 0.4rem;
+          }
+        }
+      }
+      .btn {
+        display: block;
+        text-align: center;
+        margin-top: 1.6rem;
+      }
+    }
+    .content-left {
+      justify-self: flex-end;
+    }
+    .content-right {
+      justify-self: flex-start;
+      background-color: #d5ede8;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+  }
+}
+
+//  549Phones(34.313em),
+@media screen and (max-width: 34.313em) {
+  .section-pricing {
+    &-content {
+      @include content-grid(1, 1fr, 3.2rem, center, center);
+
+      .content-left {
+        order: 1;
+        margin: auto;
+      }
+      .content-right {
+        margin: auto;
+      }
+    }
+  }
+}

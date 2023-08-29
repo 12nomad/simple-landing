@@ -1,0 +1,51 @@
+@import "var";
+
+footer {
+  background-color: #fff;
+  color: $color-primary;
+  padding: 0.6rem;
+
+  .container {
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 0.4rem;
+      gap: 2.4rem;
+
+      a img {
+        width: 85%;
+        margin-left: auto;
+      }
+      p {
+        font-size: 1.727rem;
+        padding-bottom: 0.8rem;
+      }
+    }
+  }
+  h4 {
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+  }
+}
+
+// 1219px TabletLandscape
+@media screen and (max-width: 76.188em) {
+  footer {
+    .container {
+      text-align: center;
+
+      div {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+
+        a img {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

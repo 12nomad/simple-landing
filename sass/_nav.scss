@@ -1,0 +1,176 @@
+@import "var";
+
+.navbar {
+  background-color: #d5ede8;
+
+  &-container {
+    // FIXME: defining a height make the navigation "sticky" easier
+    height: 8vh;
+
+    max-width: 85%;
+    margin: auto;
+    padding: 0.4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a img {
+      width: 85%;
+      margin-left: auto;
+    }
+    .navbar-navigation {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+
+        .nav-close {
+          display: none;
+        }
+        li a:link,
+        li a:visited {
+          transition: all 0.2s ease-in-out;
+        }
+        li a:hover,
+        li a:active {
+          color: $color-primary;
+        }
+      }
+    }
+    .navbar-mobile-navigation {
+      display: none;
+    }
+  }
+}
+
+// 959 tablet
+@media screen and (max-width: 76.188em) {
+  .navbar {
+    &-container {
+      max-width: 95%;
+
+      a img {
+        margin-left: 0;
+      }
+      .navbar-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background: $color-light;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        transform: translateX(100%);
+        transition: all 0.2s ease-in-out;
+        // reveal effect using opacity
+        // opacity: 0 (default 1);
+        // pointer-events: none (default auto);
+        // visibility: hidden (default visible);
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 2.4rem;
+          justify-content: center;
+          align-items: center;
+
+          li a:link,
+          li a:visited {
+            font-size: 3.998rem;
+            span {
+              font-size: 3.998rem;
+            }
+            ion-icon {
+              width: 4.8rem;
+              height: 4.8rem;
+            }
+          }
+          li a:hover,
+          li a:active {
+            font-size: 3.998rem;
+            span {
+              font-size: 3.998rem;
+            }
+            ion-icon {
+              width: 4.8rem;
+              height: 4.8rem;
+            }
+          }
+        }
+      }
+      .nav-icon {
+        width: 4.8rem;
+        height: 4.8rem;
+        margin-top: 2.4rem;
+        color: $color-primary;
+      }
+      .navbar-mobile-navigation {
+        display: block;
+        cursor: pointer;
+
+        .nav-close {
+          display: none;
+        }
+      }
+    }
+    .navbar-container.nav-opened {
+      .navbar-navigation {
+        transform: translateX(0);
+      }
+
+      .nav-close {
+        display: block;
+      }
+    }
+  }
+}
+
+//  549Phones(34.313em),
+@media screen and (max-width: 34.313em) {
+  .navbar {
+    &-container {
+      a img {
+        width: 65%;
+      }
+      .navbar-navigation {
+        ul {
+          li a:link,
+          li a:visited {
+            font-size: 2.827rem;
+            span {
+              font-size: 2.827rem;
+            }
+            ion-icon {
+              width: 3.2rem;
+              height: 3.2rem;
+            }
+          }
+          li a:hover,
+          li a:active {
+            font-size: 2.827rem;
+            span {
+              font-size: 2.827rem;
+            }
+            ion-icon {
+              width: 3.2rem;
+              height: 3.2rem;
+            }
+          }
+        }
+      }
+      .navbar-mobile-navigation {
+        .nav-icon {
+          width: 3.2rem;
+          height: 3.2rem;
+          margin-top: 1.6rem;
+        }
+        .nav-close {
+          display: none;
+        }
+      }
+    }
+  }
+}
